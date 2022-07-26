@@ -1,6 +1,6 @@
 body {
     background-color: rgb(121, 95, 120);
-    max-width: 960px;
+    max-width: 980px;
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -14,23 +14,19 @@ body {
 
 input {
     width: 100%;
-    padding: 5px;
-    border: 5px solid rgb(92, 60, 2);
+    padding: 8px;
+    border: 2px solid rgb(92, 60, 2);
 }
 
 table {
-    padding: 15px;
-}
-
-div {
-    border: 5px solid rgb(108, 155, 19);
+    padding: 20px;
 }
 
 table,
 th,
 td {
     border: 1px solid;
-    padding: 5px;
+    padding: 6px;
 }
 
 tr.active td {
