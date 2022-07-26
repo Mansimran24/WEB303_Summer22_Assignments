@@ -26,7 +26,6 @@ table,
 th,
 td {
     border: 1px solid;
-    padding: 6px;
 }
 
 tr.active td {
