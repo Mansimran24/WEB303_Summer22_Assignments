@@ -32,46 +32,7 @@ $(function() {
                 characterCount[1]++; 
             }
         });
-
-        
-        $('<button/>', { 
-            text: 'A - M (' + characterCount[0] + ')', 
-            click: function() {
-                $(this) 
-                    .addClass('active') 
-                    .siblings() 
-                    .removeClass('active'); 
-                cache.forEach((characters) => { 
-                    if ("a" <= characters.ncharacter && "m" >= characters.ncharacter) {
-                        characters.element.show();
-                    } else { 
-                        characters.element.hide();
-                    }
-                });
-
-            }
-        }).appendTo($buttons); 
-
-        $('<button/>', { 
-            text: `N - Z (${characterCount[1]})`, 
-            click: function() { 
-                $(this) 
-                    .addClass('active') 
-                    .siblings()
-                    .removeClass('active');
-                cache.forEach((characters) => { 
-                    if ("n" <= characters.ncharacter && "z" >= characters.ncharacter) {
-                        characters.element.show();
-                    } else {
-                        characters.element.hide();
-                    }
-                });
-            }
-        }).appendTo($buttons); 
-
     });
-
-
     function filter() {
         var query = this.value.trim().toLowerCase(); 
         if (query) { 
@@ -93,5 +54,4 @@ $(function() {
     } else { 
         $search.on('keyup', filter);
     }
-
 });
