@@ -1,20 +1,21 @@
 body {
-    background-color: rgb(220, 230, 173);
+    background-color: rgb(121, 95, 120);
     max-width: 960px;
     height: auto;
     margin: 0 auto;
     padding: 0;
+    font-family: cursive;
 }
 
 .highlight {
-    background-color: rgb(0, 238, 255);
+    background-color: rgb(39, 143, 125);
     font-weight: bold;
 }
 
 input {
     width: 100%;
     padding: 5px;
-    border: 5px solid rgb(128, 0, 0);
+    border: 5px solid rgb(92, 60, 2);
 }
 
 table {
@@ -22,7 +23,7 @@ table {
 }
 
 div {
-    border: 5px solid rgb(72, 255, 0);
+    border: 5px solid rgb(108, 155, 19);
 }
 
 table,
@@ -33,6 +34,6 @@ td {
 }
 
 tr.active td {
-    background-color: darkgreen;
+    background-color: rgb(100, 0, 32);
     color: white;
 }
