@@ -1,33 +1,38 @@
 body {
-    background-color: rgb(154, 84, 84);
+    background-color: rgb(220, 230, 173);
     max-width: 960px;
     height: auto;
     margin: 0 auto;
     padding: 0;
-    font-family: cursive;
 }
+
 .highlight {
-    background-color: rgb(32, 104, 109);
+    background-color: rgb(0, 238, 255);
     font-weight: bold;
 }
 
 input {
     width: 100%;
-    padding: 12px;
-    border: 6px solid rgb(37, 17, 103);
+    padding: 5px;
+    border: 5px solid rgb(128, 0, 0);
 }
+
 table {
     padding: 15px;
 }
 
 div {
-    border: 6px solid rgb(50, 7, 39);
+    border: 5px solid rgb(72, 255, 0);
 }
-table,th,td{
-    border:2px solid;
-    padding: 6px ;
 
+table,
+th,
+td {
+    border: 1px solid;
+    padding: 5px;
 }
-h1{
-    color:rgb(34, 14, 53)
+
+tr.active td {
+    background-color: darkgreen;
+    color: white;
 }
