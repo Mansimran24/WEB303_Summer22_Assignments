@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(154, 84, 84);
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    font-family: cursive;
+}
+.highlight {
+    background-color: rgb(32, 104, 109);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 6px solid rgb(37, 17, 103);
+}
+table {
+    padding: 15px;
+}
+
+div {
+    border: 6px solid rgb(50, 7, 39);
+}
+table,th,td{
+    border:2px solid;
+    padding: 6px ;
+
+}
+h1{
+    color:rgb(34, 14, 53)
+}
