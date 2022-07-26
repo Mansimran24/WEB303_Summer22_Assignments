@@ -15,11 +15,11 @@ body {
 input {
     width: 100%;
     padding: 8px;
-    border: 2px solid rgb(92, 60, 2);
+    border: 1px solid rgb(92, 60, 2);
 }
 
 table {
-    padding: 20px;
+    padding: 5px;
 }
 
 table,
