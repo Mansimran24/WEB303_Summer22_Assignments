@@ -28,7 +28,27 @@ $(function() {
 
         });
     }); 
-    
+    function filter() {
+        var query = this.value.trim().toLowerCase(); 
+        if (query) { 
+            cache.forEach(function(characters) { 
+                var index = 0; 
+                index = characters.fname.indexOf(query); 
+                if (index != -1) { 
+                    characters.element.addClass("active"); 
+                } else { 
+                    characters.element.removeClass("active")
+                }
+            });
+        } else { 
+            $('tbody tr').removeClass("active");
+        }
+    }
+    if ('oninput' in $search[0]) {
+        $search.on('input', filter);
+    } else { 
+        $search.on('keyup', filter);
+    }
 
 
 
