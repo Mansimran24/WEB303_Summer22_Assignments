@@ -50,6 +50,12 @@ $(function() {
         $search.on('keyup', filter);
     }
 
-
+date: date(a, b) 
+{
+     // Add a method called date
+    a = new Date(a); // New object to hold date
+    b = new Date(b); // New object to hold date
+    return a - b; // Return a minus b
+    }  
 
 });
