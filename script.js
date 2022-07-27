@@ -16,7 +16,7 @@ $(function() {
             $row.append($('<td></td>').text(val.name));
             $row.append($('<td></td>').text(val.character));
             $row.append($('<td></td>').text(val.age));
-            $row.append($('<td></td>').text(val.dob));
+            $row.append($('<td></td>').text(val.date));
 
             $tbody.append($row);
 
@@ -26,32 +26,10 @@ $(function() {
                 ncharacter: val.character.trim().toLowerCase().charAt(0)
             });
 
-            if ("a" <= val.character.trim().toLowerCase().charAt(0) && "m" >= val.character.trim().toLowerCase().charAt(0)) {
-                characterCount[0]++; 
-            } else { // n - z
-                characterCount[1]++; 
-            }
         });
-    });
-    function filter() {
-        var query = this.value.trim().toLowerCase(); 
-        if (query) { 
-            cache.forEach(function(characters) { 
-                var index = 0; 
-                index = characters.fname.indexOf(query); 
-                if (index != -1) { 
-                    characters.element.addClass("active"); 
-                } else { 
-                    characters.element.removeClass("active")
-                }
-            });
-        } else { 
-            $('tbody tr').removeClass("active");
-        }
-    }
-    if ('oninput' in $search[0]) {
-        $search.on('input', filter);
-    } else { 
-        $search.on('keyup', filter);
-    }
+    }); 
+    
+
+
+
 });
