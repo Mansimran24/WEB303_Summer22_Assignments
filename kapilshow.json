@@ -1,32 +1,32 @@
 {
     "kapilshow": [{
             "name": "Kapil Sharma",
-            "character": "Bittu",
+            "description": "Bittu",
             "age": "41",
             "date": "1981-04-02"
 
         },
         {
             "name": "Sumona Chakravarti",
-            "character": "Manju(Bittu Wife)",
+            "description": "Manju(Bittu Wife)",
             "age": "34",
             "date": "1988-06-24"
 
         }, {
             "name": "Ali Asgar",
-            "character": "Dadi(Bittu Grandmother)",
+            "description": "Dadi(Bittu Grandmother)",
             "age": "56",
             "date": "1966-07-25"
 
         }, {
             "name": "Chandan Prabhakar",
-            "character": "Chandu(Servent)",
+            "description": "Chandu(Servent)",
             "age": "41",
             "date": "1981-08-16"
 
         }, {
             "name": "Sunil Grover",
-            "character": "Doctor",
+            "description": "Doctor",
             "age": "44",
             "date": "1977-08-03"
 
