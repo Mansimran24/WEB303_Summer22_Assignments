@@ -50,6 +50,13 @@ $(function() {
         $search.on('keyup', filter);
     }
   
+
+/*
+------------Sorting-------------
+*/
+
+
+
     var compare = { 
         name: function(a, b) { 
             a = a.replace(/^the /i, ''); 
@@ -75,6 +82,7 @@ $(function() {
                 var $header = $(this); 
             
         var order = $header.data('sort'); 
+        var column;
         if ($header.is('.ascending') || $header.is('.descending')) { 
             $header.toggleClass('ascending descending');
             
