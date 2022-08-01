@@ -14,7 +14,7 @@ $(function() {
 
             var $row = $('<tr></tr>'); 
             $row.append($('<td></td>').text(val.name));
-            $row.append($('<td></td>').text(val.description));
+            $row.append($('<td></td>').text(val.character));
             $row.append($('<td></td>').text(val.age));
             $row.append($('<td></td>').text(val.date));
 
