@@ -3,8 +3,6 @@ $(function() {
     var $tbody = $('tbody'); 
     var $search = $('#search');
     var cache = [];
-    var characterCount = [0, 0]; 
-    var $buttons = $('#buttons'); 
 
 
     $.getJSON("kapilshow.json").done((data) => {
@@ -26,8 +24,7 @@ $(function() {
                 ncharacter: val.character.trim().toLowerCase().charAt(0)
             });
 
-        });
-    }); 
+        
     function filter() {
         var query = this.value.trim().toLowerCase(); 
         if (query) { 
@@ -49,13 +46,10 @@ $(function() {
     } else { 
         $search.on('keyup', filter);
     }
-  
 
 /*
 ------------Sorting-------------
 */
-
-
 
     var compare = { 
         name: function(a, b) { 
@@ -103,5 +97,6 @@ $(function() {
     
                                           
 
-
+});
+});
 });
